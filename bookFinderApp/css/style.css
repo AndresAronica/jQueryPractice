@@ -1,0 +1,66 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(#1b2f3a, #20333E);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#searchResults {
+    margin-bottom: 10vh;
+    /* background-color: rgb(141, 124, 124); */
+}
+
+.bookItem {
+    background-image: linear-gradient(#F1FAEE, #ADC2CE);
+    border: 3px solid #fb8122;
+}
+
+/* TODO Cambiar los titulos, me olvide de ponerle estilo de verdad */
+.titulo {
+    text-decoration: none;
+    color: #e60576;
+}
+
+.titulo:hover {
+    /* Maybe algo */
+}
+
+.foto {
+    /* border-inline: 1px 1px; */
+    border-style: solid;
+    border-color: #fb8122;
+}
+
+.titulo,
+.autor,
+.publicado,
+.publisher {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item {
+    font-family: 'Overpass', sans-serif;
+}
+
+.footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+}
+
+.brand {
+    font-family: 'Sriracha', cursive;
+}
+
+.icon {
+    font-size: 2rem;
+    color: white;
+}
