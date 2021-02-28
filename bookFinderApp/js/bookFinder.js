@@ -22,12 +22,7 @@ $(function () {
   };
 
   let showResults = function (data) {
-    // // console.log(data);
-    // // console.log(data.items);
-
     // TODO Que la reseña sea un pop-up o algo asi, que no este en el item per se, porque son largas
-    // TODO -> Autor deberia ser tambien un for en caso de que sea mas de uno
-
     $("#searchResultsContainer").empty();
     $("<div class='row gap-5' id='searchResults'></div>").appendTo(
       $("#searchResultsContainer")
@@ -126,32 +121,24 @@ $(function () {
     if (!searchParams) {
       alert("Pone algo para buscar gil");
     } else {
-      // console.log(searchParams);
       getBooks();
     }
   }
-
-  // ------------------------------------------ //
-  //         Llamadas a funciones
-  // ------------------------------------------ //
 
   // ------------------------------------------ //
   //         Event Listeners
   // ------------------------------------------ //
 
   let searchParams;
-  //let searchOption = 'Book';
 
   $("#searchParams").change(function () {
     searchParams = $("#searchParams").val();
-    // console.log($("#searchParams").val());
   });
 
   $("#searchParams").on("keyup", function (e) {
     if (e.keyCode === 13) {
       searchParams = $("#searchParams").val();
       checkBookName(searchParams, getBooks);
-      // console.log($("#searchParams").val());
     }
   });
 
@@ -160,9 +147,4 @@ $(function () {
       checkBookName(searchParams, getBooks);
     },
   });
-
-  // $('#searchOptions').change(function () {
-  //     searchOption = $('#searchOptions option:selected').val();
-  //     // console.log($('#searchOptions option:selected').val());
-  // });
 });

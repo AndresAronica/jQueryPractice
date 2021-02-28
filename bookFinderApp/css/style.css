@@ -9,26 +9,19 @@ body {
 
 #searchResults {
     margin-bottom: 10vh;
-    /* background-color: rgb(141, 124, 124); */
 }
 
 .bookItem {
-    background-image: linear-gradient(#F1FAEE, #ADC2CE);
+    background-color: #ADC2CE;
     border: 3px solid #fb8122;
 }
 
-/* TODO Cambiar los titulos, me olvide de ponerle estilo de verdad */
 .titulo {
     text-decoration: none;
     color: #e60576;
 }
 
-.titulo:hover {
-    /* Maybe algo */
-}
-
 .foto {
-    /* border-inline: 1px 1px; */
     border-style: solid;
     border-color: #fb8122;
 }
